@@ -1,0 +1,252 @@
+html,
+body {
+    height: 100%;
+}
+
+/* Get In general styles*/
+.btn-getin{
+  background-color: #2cad78;
+  border-color: #2cad78;
+  color:#fff !important;
+}
+
+.btn-getin:hover{
+  color:#2cad78 !important;
+}
+
+.space-bottom-50{
+  margin-bottom: 50px;
+}
+
+.float-middle{
+  transform: translate(0%,100%);
+}
+
+.align-center{
+  margin: 0 auto;
+}
+
+.hidden{
+  display: none;
+}
+
+/* Navbar styling */
+
+.navbar{
+  border:0;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+.navbar-image{
+  max-height: 45px;
+}
+
+.navbar-demo-btn{
+  padding: 0;
+}
+
+/* Work section styles */
+
+#work{
+  background-color: #2cad78;
+  color:#fff;
+  text-align: center;
+  padding: 6vh 0;
+  min-height: 60%;
+}
+
+.video-getin{
+  padding-top: 20px;
+}
+
+/* Tracking section styles */
+
+#tracking{
+  padding: 6vh 0;
+  text-align: center;
+  background-color: #f2f2f2;
+  min-height: 60%;
+}
+
+.perks-section {
+  text-align: center;
+}
+ul.perks-section {
+  padding: 0;
+}
+
+ul.perks-section li {
+  display: inline-block;
+  text-align: center;
+  min-width: 150px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px 20px;
+}
+
+.perks-section > .btn-getin:hover {
+  color:#fff !important;
+  background-color: #2c7d78;
+  animation-name: colorChange;
+  animation-duration: 0.7s;
+}
+
+.perks-section > .btn-getin:active {
+  color:#fff !important;
+  background-color: #2c7d78;
+}
+
+@keyframes colorChange {
+    from {background-color:#2cad78;}
+    to {background-color: #2c7d78;}
+}
+
+.btn-tracking-active{
+  background-color: #198078;
+}
+
+/* Customers section styles */
+
+#customers{
+  padding: 12vh 0 6vh 0;
+  text-align: center;
+  min-height: 60%;
+}
+.bullets{
+  padding-bottom:15px;
+}
+
+.bullets:nth-child(1){
+  padding-top: 15px;
+}
+.inline{
+}
+
+.translate-top {
+  text-align: left !important;
+}
+
+/* Footer section styles */
+
+footer{
+  background-color: #000;
+  color:#fff;
+  padding: 6vh;
+}
+
+.social-btns{
+  max-width: 40px;
+  display: inline-block;
+}
+
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 75%;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.item .fill.uno {
+
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ),
+      url('../imgs/getin1-min.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item .fill.dos {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../imgs/getin2-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item .fill.tres {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../imgs/getin3-min.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    top:30%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+   .navbar-nav {
+      margin: 7.5px -15px 0;
+   }
+
+   .navbar-collapse{
+    -webkit-box-shadow: inset 0px 3px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 3px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 3px 16px -4px rgba(0,0,0,0.75);
+   }
+
+   .navbar-collapse > ul > li > a{
+     text-align: center;
+   }
+
+   .carousel-caption {
+       top:20%;
+       z-index: 10;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       color: #fff;
+       text-align: left;
+       text-shadow: 0 1px 2px rgba(0,0,0,.3);
+   }
+
+   #work{
+     min-height: auto;
+   }
+
+   #customers{
+     min-height: auto;
+   }
+
+   #tracking{
+     min-height: auto;
+   }
+
+}
