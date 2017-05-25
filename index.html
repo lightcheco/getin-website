@@ -4,10 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="Homepage"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://www.getin.mx/"/>
+	<meta property="og:site_name" content="GETIN"/>
+	<meta property="og:description" content="The new way to be in touch with your brands"/>
   <title>Get In</title>
+  <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Font awesome CDN -->
   <script src="https://use.fontawesome.com/19b68ccea9.js"></script>
+  <!-- Google recaptcha -->
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  <!-- Hide Recaptcha badge, must be done inline
+  <style>
+        .grecaptcha-badge {display: none;}
+  </style>
+  -->
 </head>
 <body>
   <!-- Navigation -->
@@ -29,19 +43,19 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                   <li>
-                      <a href="#">Solución</a>
+                      <a href="#work">Solution</a>
                   </li>
                   <li>
-                      <a href="#">Clientes</a>
+                      <a href="#customers">Clients</a>
                   </li>
                   <li>
-                      <a href="#">Contacto</a>
+                      <a href="#frmContact">Contact</a>
                   </li>
                   <li>
-                      <a href="#"> <span class="fa fa-envelope"></span> contacto@getin.mx</a>
+                      <a href="mailto:contacto@getin.mx"> <span class="fa fa-envelope"></span> contacto@getin.mx</a>
                   </li>
                   <li>
-                      <a href="#" class=" btn-getin navbar-demo-btn">DEMO</a>
+                      <a href="#frmContact" class=" btn-getin navbar-demo-btn">DEMO</a>
                   </li>
               </ul>
           </div>
@@ -66,7 +80,7 @@
               <div class="carousel-caption">
                 <div class="col-xs-12 col-sm-8">
                   <h2>Count the number of people entering and passing by your stores</h2>
-                  <div class="btn btn-getin">Learn More</div>
+                  <a href="#work" class="btn btn-getin">Learn More</a>
                 </div>
                 <div class="col-xs-12 col-sm-4"></div>
               </div>
@@ -75,13 +89,14 @@
               <div class="fill dos"></div>
               <div class="carousel-caption">
                   <h2>Discover your power hours in which your stores generate most traffic, and have biggest sale opportunities.</h2>
-
+                  <a href="#work" class="btn btn-getin">Learn More</a>
               </div>
           </div>
           <div class="item">
               <div class="fill tres"></div>
               <div class="carousel-caption">
                   <h2>Be able to locate your highest and lowest performing stores and analyze in-store performance for benchmarking</h2>
+                  <a href="#work" class="btn btn-getin">Learn More</a>
               </div>
           </div>
       </div>
@@ -106,7 +121,7 @@
                   <div class="col-sm-3"></div>
                   <div class="col-sm-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe src="https://www.youtube.com/embed/mFYZAlrOzG8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                      <iframe src="https://www.youtube.com/embed/mFYZAlrOzG8?rel=0&amp;controls=0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
                     </div>
                   </div>
                   <div class="col-sm-3"></div>
@@ -129,7 +144,7 @@
             <div class="col-sm-10">
               <ul class="perks-section">
                 <li id="visitorTrackingBtn"class="btn-getin btn-tracking-active">Visitor Tracking</li>
-                <li id="wifiMapBtn" class="btn-getin">Wifi Map</li>
+                <li id="wifiMapBtn" class="btn-getin">WiFi Map</li>
                 <li id="pushNotificationBtn" class="btn-getin">Push Notification</li>
               </ul>
             </div>
@@ -138,32 +153,30 @@
         <div id="visitorTracking" class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-5">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/mFYZAlrOzG8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
-              </div>
+              <img src="assets/imgs/pushnotif.gif" class="img-responsive gifTrackingSection align-center" alt="Getin gif">
             </div>
             <div class="col-sm-5">
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-14.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-14.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 col-md-10">
+                <div class="col-xs-10 col-sm-9 col-md-10">
                   <p class="translate-top"><b>Street Counting:</b> Know how many potential visitors pass by your stores and your street-to-store conversion rate.</p>
                 </div>
               </div>
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-08.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-08.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 col-md-10">
-                  <p class="translate-top"><b> Staff Elimination:</b>Receive “pure” visitor traffic data on a daily and hourly basis. Track your staff’s deduct them from the total people count.</p>
+                <div class="col-xs-10 col-sm-9 col-md-10">
+                  <p class="translate-top"><b> Staff Elimination:</b> Receive “pure” visitor traffic data on a daily and hourly basis. Track your staff’s deduct them from the total people count.</p>
                 </div>
               </div>
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-13.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-13.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 ol-md-10">
+                <div class="col-xs-10 col-sm-9 ol-md-10">
                   <p class="translate-top"><b>Peak hours:</b> Discover your power hours in which your stores generate most traffic, and have biggest sale opportunities.</p>
                 </div>
               </div>
@@ -173,24 +186,22 @@
         <div id="wifiMap" class="row hidden">
             <div class="col-sm-1"></div>
             <div class="col-sm-5">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/mFYZAlrOzG8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
-              </div>
+              <img src="assets/imgs/Wifimap.gif" class="img-responsive gifTrackingSection align-center" alt="Getin gif">
             </div>
             <div class="col-sm-5">
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-12.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-12.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 col-md-10">
+                <div class="col-xs-10 col-sm-9 col-md-10">
                   <p class="translate-top"><b>Improve Store Design:</b> Discover the hotspots your customers are being attracted to. This will help you make active decisions about your product placements, lighting and positioning of shelves and mannequins.</p>
                 </div>
               </div>
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-11.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-11.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 ol-md-10">
+                <div class="col-xs-10 col-sm-9 ol-md-10">
                   <p class="translate-top"><b>Measure Success of Products:</b> By measuring your customers dwell time in certain locations, you can get detailed info about how attractive your new product line is.</p>
                 </div>
               </div>
@@ -200,24 +211,22 @@
         <div id="pushNotification" class="row hidden">
             <div class="col-sm-1"></div>
             <div class="col-sm-5">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/mFYZAlrOzG8?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
-              </div>
+              <img src="assets/imgs/Visitortracking.gif" class="img-responsive gifTrackingSection align-center" alt="Getin gif">
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 bullets-container">
               <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-10.png" alt="">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-10.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 col-md-10">
+                <div class="col-xs-10 col-sm-9 col-md-10">
                   <p class="translate-top"><b>Attract clients:</b> Through a personalized message in the right momenta at the right time.</p>
                 </div>
               </div>
-              <div class="bullets row">
-                <div class="col-sm-3 col-md-2">
-                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-09.png" alt="">
+              <div class="bullets row align-bottom">
+                <div class="col-xs-2 col-sm-3 col-md-2">
+                  <img width="50px" class="img img-responsive align-center" src="assets/imgs/bullet-icon-09.png" alt="Bullet icon">
                 </div>
-                <div class="col-sm-9 ol-md-10">
+                <div class="col-xs-10 col-sm-9 ol-md-10">
                   <p class="translate-top"><b>Deals or other options:</b> Offer deals to your potential customers so they como inside or just let them now you are around.</p>
                 </div>
               </div>
@@ -238,16 +247,16 @@
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
             <div class="col-sm-3">
-              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-01.png" alt="">
+              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-01.png" alt="Logo Costumer">
             </div>
             <div class="col-sm-3">
-              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-02.png" alt="">
+              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-02.png" alt="Logo Costumer">
             </div>
             <div class="col-sm-3">
-              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-03.png" alt="">
+              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-03.png" alt="Logo Costumer">
             </div>
             <div class="col-sm-3">
-              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-04.png" alt="">
+              <img max-width="180px" class="img img-responsive align-center" src="assets/imgs/logos-marcas-04.png" alt="Logo Costumer">
             </div>
           </div>
         </div>
@@ -277,10 +286,15 @@
                 71600183
               </p>
               <div class="row">
+                <div class="col-xs-12 space-bottom-30">
+                  <a href="https://www.facebook.com/getin.mx/?fref=ts" target="_blank"><img src="assets/imgs/btnFb.png" class="img-responsive social-btns" alt="Facebook button"></a>
+                  <a href="https://twitter.com/Frankalvarezb" target="_blank"><img src="assets/imgs/btnTw.png" class="img-responsive social-btns" alt="Twitter button"></a>
+                  <a href="#"><img src="assets/imgs/btnLi.png" class="img-responsive social-btns" alt="Linkedin button"></a>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-xs-12">
-                  <img src="assets/imgs/btnFb.png" class="img-responsive social-btns" alt="">
-                  <img src="assets/imgs/btnTw.png" class="img-responsive social-btns" alt="">
-                  <img src="assets/imgs/btnLi.png" class="img-responsive social-btns" alt="">
+                  <p class="small">Copyright, &copy; 2016.</p>
                 </div>
               </div>
             </div>
@@ -290,7 +304,44 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Request a Demo</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-7  col-sm-offset-4">
+              <form id="frmContact" action="captcha.php" method="post">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-user-circle"></i></div>
+                    <input id="name" class="form-control" type="text" name="name" placeholder="Your name" required >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                    <input id="email" class="form-control" type="email" name="email" placeholder="Email" required >
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                    <input id="phoneNumber" class="form-control" type="number" name="phoneNumber" placeholder="Phone Number" maxlength="15">
+                  </div>
+                </div>
+                <!-- Button recaptcha -->
+                <div id="recaptchaContainer" class="form-group hideRecaptcha">
+                  <div class="g-recaptcha" data-sitekey="6Lfe3xkUAAAAAKGEW-13MM48BqpPiN3K3AkJ2EZ2" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                </div>
+                <div id="response"></div>
+                <input type="submit" value="Send" class="btn  btn-getin" />
+              </form>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -308,6 +359,42 @@
       interval: 5000 //changes the speed
   })
   </script>
+  <script type="text/javascript">
+     $(document).ready(function (e){
+          $("#frmContact").on('submit',(function(e){
+              e.preventDefault();
+              $.ajax({
+                  url: "captcha.php",
+                  encoding:"UTF-8",
+                  type: "POST",
+                  data:  new FormData(this),
+                  contentType: false,
+                  cache: false,
+                  processData:false,
+                  success: function(data){
+                      $("#response").html(data);
+                      grecaptcha.reset();
+                  },
+                  error: function(){}
 
+              });
+          }));
+      });
+  </script>
+  <!-- Google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-99450007-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+        $("#name").focus(function(){
+         $("#recaptchaContainer").removeClass("hideRecaptcha");
+     });
+  </script>
 </body>
 </html>

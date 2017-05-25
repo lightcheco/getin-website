@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 /* Get In general styles*/
@@ -11,11 +12,16 @@ body {
 }
 
 .btn-getin:hover{
-  color:#2cad78 !important;
+  color:#fff !important;
+  background-color: #2C8178;
 }
 
 .space-bottom-50{
   margin-bottom: 50px;
+}
+
+.space-bottom-30{
+  margin-bottom: 30px;
 }
 
 .float-middle{
@@ -48,6 +54,10 @@ body {
   padding: 0;
 }
 
+.navbar-demo-btn:hover{
+  color: #2cad78 !important;
+}
+
 /* Work section styles */
 
 #work{
@@ -73,6 +83,7 @@ body {
 
 .perks-section {
   text-align: center;
+  font-weight: bold;
 }
 ul.perks-section {
   padding: 0;
@@ -85,6 +96,7 @@ ul.perks-section li {
   border-radius: 8px;
   padding: 10px 15px;
   margin: 10px 20px;
+  font-size: 1.15em;
 }
 
 .perks-section > .btn-getin:hover {
@@ -108,6 +120,11 @@ ul.perks-section li {
   background-color: #198078;
 }
 
+.gifTrackingSection{
+  max-width: 400px;
+  width: 100%;
+}
+
 /* Customers section styles */
 
 #customers{
@@ -115,6 +132,13 @@ ul.perks-section li {
   text-align: center;
   min-height: 60%;
 }
+
+.bullets-container{
+  min-height: 225px;
+  height: 100%;
+  position: relative;
+}
+
 .bullets{
   padding-bottom:15px;
 }
@@ -122,8 +146,12 @@ ul.perks-section li {
 .bullets:nth-child(1){
   padding-top: 15px;
 }
-.inline{
+
+.align-bottom{
+  position:absolute;
+  bottom:0;
 }
+
 
 .translate-top {
   text-align: left !important;
@@ -140,9 +168,21 @@ footer{
 .social-btns{
   max-width: 40px;
   display: inline-block;
+
 }
 
+footer .form-control{
+  border-color: #fff;
+}
 
+footer .input-group-addon{
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.hideRecaptcha{
+  display: none !important;
+}
 /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
 
 .carousel {
@@ -243,6 +283,17 @@ footer{
 
    #customers{
      min-height: auto;
+   }
+
+   .bullets-container{
+     min-height: 150px;
+     height: 100%;
+     position: static;
+   }
+
+   .align-bottom{
+     position:static;
+     bottom:0;
    }
 
    #tracking{
